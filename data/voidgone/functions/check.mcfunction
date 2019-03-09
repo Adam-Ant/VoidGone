@@ -1,1 +1,1 @@
-execute as @a in the_end at @s if entity @s[y=-20,dy=-100] run function voidgone:teleport
+execute as @a in the_end at @s if entity @s[y=-50,dy=-200] run function voidgone:teleport
