@@ -1,3 +1,0 @@
-tp @e[type=armor_stand,tag=voidgonemarker,sort=nearest,limit=1] @s
-tellraw @s ["",{"text":"Void Gone marker move","color":"aqua"}]
-

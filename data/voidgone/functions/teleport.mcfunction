@@ -1,4 +1,8 @@
-tp @s @e[type=armor_stand,tag=voidgonemarker,sort=nearest,limit=1]
+execute at @s run summon area_effect_cloud ~ ~ ~ {Tags:["VoidGoneTeleportTarget"], Duration:1}
+tag @s add VoidGonePlayer
+execute as @e[type=area_effect_cloud,tag=VoidGoneTeleportTarget,limit=1] run function voidgone:tp_to_marker
+tag @s remove VoidGonePlayer
+
 playsound minecraft:entity.enderman.teleport master @s
 effect give @s poison 15 2 true
 effect give @s nausea 10 1 true
