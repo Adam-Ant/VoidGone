@@ -1,4 +1,5 @@
 { "values": [
-    "voidgone:load"
+    "voidgone:load",
+    "voidgone:tick"
   ]
 }
